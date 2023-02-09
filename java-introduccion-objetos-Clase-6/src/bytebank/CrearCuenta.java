@@ -1,5 +1,4 @@
 package bytebank;
-
 public class CrearCuenta {
 
     public static void main(String[] args) {

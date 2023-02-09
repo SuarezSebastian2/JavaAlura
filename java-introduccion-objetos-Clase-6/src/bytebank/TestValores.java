@@ -16,6 +16,7 @@ public class TestValores {
         Cuenta cuenta3 = new Cuenta(2112, 14660);
 
         System.out.println(Cuenta.getTotal());
-
+        System.out.println(cuenta2.getSaldo());
+        System.out.println(cuenta3.getSaldo());
     }
 }

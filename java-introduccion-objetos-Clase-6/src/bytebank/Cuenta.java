@@ -21,7 +21,12 @@ public class Cuenta {
         this.saldo = this.saldo + valor;
     }
 
-    public boolean saca(double valor) {
+    public Cuenta() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public boolean saca(double valor) {
         if(this.saldo >= valor) {
             this.saldo -= valor;
             return true;
