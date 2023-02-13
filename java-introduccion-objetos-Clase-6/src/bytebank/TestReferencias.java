@@ -19,12 +19,12 @@ public class TestReferencias {
 
         System.out.println(primeraCuenta.getSaldo());
 
-        if(primeraCuenta == segundaCuenta) {
+        if (primeraCuenta == segundaCuenta) {
             System.out.println("Es la misma cuenta");
         }
 
         System.out.println(primeraCuenta);
         System.out.println(segundaCuenta);
     }
-    
+
 }

@@ -1,4 +1,5 @@
 package bytebank;
+
 public class CrearCuenta {
 
     public static void main(String[] args) {
@@ -27,7 +28,7 @@ public class CrearCuenta {
         segundaCuenta.setAgencia(146);
         System.out.println("Ahora la segunda cuenta esta en la agencia " + segundaCuenta.getAgencia());
 
-        if(primeraCuenta == segundaCuenta) {
+        if (primeraCuenta == segundaCuenta) {
             System.out.println("misma cuenta");
         } else {
             System.out.println("cuentas diferentes");

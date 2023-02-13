@@ -13,18 +13,18 @@ public abstract class Cuenta {
 
     }
 
-    public Cuenta( int agencia, int numero) {
+    public Cuenta(int agencia, int numero) {
         this.agencia = agencia;
         this.numero = numero;
         System.out.println("Estoy creando una cuenta " + this.numero);
 
-        Cuenta.total ++;
+        Cuenta.total++;
     }
 
     public abstract void deposita(double valor);
 
     public boolean saca(double valor) {
-        if(this.saldo >= valor) {
+        if (this.saldo >= valor) {
             this.saldo -= valor;
             return true;
         } else {
@@ -33,7 +33,7 @@ public abstract class Cuenta {
     }
 
     public boolean transfiere(double valor, Cuenta destino) {
-        if(this.saldo >= valor) {
+        if (this.saldo >= valor) {
             this.saca(valor);
             destino.deposita(valor);
             return true;

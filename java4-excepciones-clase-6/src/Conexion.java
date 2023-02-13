@@ -1,7 +1,7 @@
 
 public class Conexion implements AutoCloseable {
 
-	public Conexion() {
+    public Conexion() {
         System.out.println("Abriendo conexion");
     }
 
@@ -14,9 +14,9 @@ public class Conexion implements AutoCloseable {
         System.out.println("Cerrando conexion");
     }
 
-	@Override
-	public void close() throws Exception {
-		cerrar();
-	}
+    @Override
+    public void close() throws Exception {
+        cerrar();
+    }
 
 }

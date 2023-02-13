@@ -9,7 +9,6 @@ public class TestCuentaSinCliente {
         // Descomentar esta linea para evitar el NullPointerException
         // cuentaDeJimena.titular = new Cliente(); Antiguo
         // cuentaDeJimena.setTitular(new Cliente()); Nuevo
-
         System.out.println(cuentaDeJimena.getTitular());
 
         // cuentaDeJimena.titular.nombre = "Jimena";

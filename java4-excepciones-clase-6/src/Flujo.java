@@ -1,7 +1,7 @@
 
 public class Flujo {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         System.out.println("Inicio main");
         metodo1();
         System.out.println("Fin de main");
@@ -11,7 +11,7 @@ public class Flujo {
         System.out.println("Inicio de metodo1");
         try {
             metodo2();
-        } catch(MiException ex) {
+        } catch (MiException ex) {
             String msg = ex.getMessage();
             System.out.println("Exception " + msg);
             ex.printStackTrace();
@@ -25,5 +25,4 @@ public class Flujo {
         // System.out.println("Fin de metodo2");
     }
 
-	
 }
