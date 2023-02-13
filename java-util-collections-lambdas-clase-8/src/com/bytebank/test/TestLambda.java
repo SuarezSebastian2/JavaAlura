@@ -13,9 +13,9 @@ import com.bytebank.modelo.CuentaCorriente;
 
 public class TestLambda {
 
-    public static void main(String[] args) {
-
-        Cuenta cc1 = new CuentaCorriente(62, 33);
+public static void main(String[] args) {
+		
+		Cuenta cc1 = new CuentaCorriente(62, 33);
         Cliente clienteCC1 = new Cliente();
         clienteCC1.setNombre("Diego");
         cc1.setTitular(clienteCC1);
@@ -44,40 +44,41 @@ public class TestLambda {
         lista.add(cc2);
         lista.add(cc3);
         lista.add(cc4);
-
-        System.out.println("Antes de ordenar");
-        for (Cuenta cuenta : lista) {
-            System.out.println(cuenta);
-        }
-
-        // Usando Lambdas
-        lista.sort((Cuenta o1, Cuenta o2)
-                -> Integer.compare(o1.getNumero(), o2.getNumero())
-        );
-
-        System.out.println("Despues de ordenar");
-        for (Cuenta cuenta : lista) {
-            System.out.println(cuenta);
-        }
-
-        Collections.sort(lista, (c1, c2)
-                -> c1.getTitular().getNombre()
-                        .compareTo(c2.getTitular().getNombre())
-        );
-
-        System.out.println("Despues de ordenar por nombre titular");
+	    
+	    System.out.println("Antes de ordenar");
+	    for (Cuenta cuenta : lista) {
+	    	System.out.println(cuenta);
+	    }
+	    
+	    // Usando Lambdas
+	    lista.sort((Cuenta o1, Cuenta o2) -> 
+	    	Integer.compare(o1.getNumero(), o2.getNumero())	
+		);
+	    
+	    System.out.println("Despues de ordenar");
+	    for (Cuenta cuenta : lista) {
+	    	System.out.println(cuenta);
+	    }
+	    
+	    Collections.sort(lista, (c1, c2) -> 
+	    	c1.getTitular().getNombre()
+	    			.compareTo(c2.getTitular().getNombre())
+	    );
+	    
+	    
+	    System.out.println("Despues de ordenar por nombre titular");
 //	    for (Cuenta cuenta : lista) {
 //	    	System.out.println(cuenta);
 //	    }
-
-        lista.forEach(cuenta -> System.out.println(cuenta));
-
-        Collections.sort(lista);
-
-        System.out.println("Despues de ordenar por orden natural");
-        for (Cuenta cuenta : lista) {
-            System.out.println(cuenta);
-        }
-    }
-
+	    
+	    lista.forEach(cuenta -> System.out.println(cuenta));
+	    
+	    Collections.sort(lista);
+	    
+	    System.out.println("Despues de ordenar por orden natural");
+	    for (Cuenta cuenta : lista) {
+	    	System.out.println(cuenta);
+	    }
+	}
+	
 }

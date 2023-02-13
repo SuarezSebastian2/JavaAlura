@@ -3,5 +3,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="1736-java-primeros-pasos-9e94605bf59bb05b8bd23498c2a49940e42d8092/src"/>
 	<classpathentry kind="src" path="java-introduccion-objetos-Clase-6/src"/>
+	<classpathentry kind="src" path="java-util-collections-lambdas-clase-8/src/com/bytebank/test"/>
 	<classpathentry kind="output" path="java-introduccion-objetos-Clase-6/bin"/>
 </classpath>
